@@ -37,6 +37,12 @@
                 return false;
             }
 
+            var type = document.forms["reg-form"]["type"].value;
+            if (type == null || type == "") {
+                alert("Please select if you are a Student or Teacher");
+                return false;
+            }
+
             return true;
         }
     });
